@@ -1,6 +1,6 @@
 # Intersection Algorithms
 
-## Add Your Name Here
+## Kate Folkenroth 
 
 ## Program Output
 
