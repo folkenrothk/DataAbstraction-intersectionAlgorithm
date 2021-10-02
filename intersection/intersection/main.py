@@ -44,33 +44,43 @@ def generate_random_container(
     size: int, maximum: int, make_tuple: bool = False
 ) -> Union[List[int], Tuple[int, ...]]:
     """Generate a random list defined by the size and with no number bigger than maximum."""
-    # TODO: generate a list of random values
-    # TODO: the size of the list must be defined by the size parameter
-    # TODO: the contents of the list cannot have a number bigger than the number stored in maximum
-    # TODO: if the make_tuple parameter is True, then return a tuple instead of a list
-    # TODO: delete this placeholder return statement
-    return ()
+    # generate a list of random values
+    randomList = []
+    # the size of the list must be defined by the size parameter    
+    # the contents of the list cannot have a number bigger than the number stored in maximum
+    for i in range(0, size):
+        n = random.randint(0, maximum)
+        randomList.append(n)
+    # if the make_tuple parameter is True, then return a tuple instead of a list
+    if make_tuple is True:
+        return tuple(randomList)
+    else:
+        return randomList
 
 def compute_intersection_list_double(
     input_one: List[Any], input_two: List[Any]
 ) -> List[Any]:
     """Compute the intersection of two provided lists."""
-    # TODO: implement this function in a manner
-    # that follows the compute_intersection_tuple_double
-    # TODO: this function must use a double for loop
-    # TODO: delete this placeholder return statement
-    return []
-
+    # implement this function following the compute_intersection_tuple_double
+    # this function must use a double for loop
+    result = [Any, ...]
+    for x in input_one:
+        for y in input_two:
+            if x == y:
+                result.append(y)
+    return result
 
 def compute_intersection_list_single(
     input_one: List[Any], input_two: List[Any]
 ) -> List[Any]:
     """Compute the intersection of two provided lists."""
-    # TODO: implement this function in a manner
-    # that follows the compute_intersection_tuple_single
-    # TODO: this function must use a single for loop and an if statement
-    # TODO: delete this placeholder return statement
-    return []
+    # implement this following the compute_intersection_tuple_single
+    # this function must use a single for loop and an if statement
+    result = [Any, ...]
+    for x in input_one:
+        if x in input_two:
+            result.append(x)
+    return result
 
 
 def compute_intersection_tuple_double(
