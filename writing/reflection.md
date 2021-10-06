@@ -6,41 +6,83 @@
 
 ### Use eight fenced code blocks to provide output from eight different runs of `intersection` with different inputs
 
+*Do not run the program with the `--display` option when conducting experiments!*
+
+*Whenever possible, please use the same "small" and "large" inputs for both the List-based and Tuple-based algorithms.*
+
 TODO: Summary of the runs for the List-based algorithms:
 
-TODO: Summary of the runs for the ListSingle algorithm:
-Run 1: ListSingle with a small input
-Run 2: ListSingle with a large input
-
-TODO: Summary of the runs for the ListDouble algorithm:
-Run 1: ListDouble with a small input
-Run 2: ListDouble with a large input
 
 TODO: Summary of the runs for the Tuple-based algorithms:
 
-TODO: Summary of the runs for the TupleSingle algorithm:
-Run 1: TupleSingle with a small input
-Run 2: TupleSingle with a large input
-
-TODO: Summary of the runs for the ListDouble algorithm:
-Run 1: ListDouble with a small input
-Run 2: ListDouble with a large input
-
-TODO: Whenever possible, please use the same "small" and "large" inputs for both
-the List-based and Tuple-based algorithms.
-
-TODO: Do not run the program with the `--display` option when conducting
-experiments!
 
 TODO: Document and justify your choice for the `number` and `maximum` variables.
 
 #### Two outputs from running the `ListSingle` algorithm with different inputs
 
+Run 1: ListSingle with a small input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach ListSingle`
+    
+    ```
+    TODO
+    ```
+
+Run 2: ListSingle with a large input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach ListSingle`
+
+    ```
+    TODO
+    ```
+
+TODO: Summary of the runs for the ListSingle algorithm:
+
+
 #### Two outputs from running the `ListDouble` algorithm with different inputs
+
+Run 1: ListDouble with a small input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach ListDouble`
+
+    ```
+    TODO
+    ```
+
+
+Run 2: ListDouble with a large input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach ListDouble`
+
+    ```
+    TODO
+    ```
+
+TODO: Summary of the runs for the ListDouble algorithm:
 
 #### Two outputs from running the `TupleSingle` algorithm with different inputs
 
+Run 1: TupleSingle with a small input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach TupleSingle`
+
+    ```
+    TODO
+    ```
+
+Run 2: TupleSingle with a large input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach TupleSingle`
+    
+    ```
+    TODO
+    ```
+
+TODO: Summary of the runs for the TupleSingle algorithm:
+
 #### Two outputs from running the `TupleDouble` algorithm with different inputs
+
+Run 1: ListDouble with a small input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach TupleDouble`
+
+Run 2: ListDouble with a large input
+    `poetry run intersection --number 1000 --maximum 25 --profile --approach TupleDouble`
+
+TODO: Summary of the runs for the ListDouble algorithm:
 
 ## Performance Analysis
 

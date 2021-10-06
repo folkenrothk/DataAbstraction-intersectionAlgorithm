@@ -46,16 +46,17 @@ def generate_random_container(
     """Generate a random list defined by the size and with no number bigger than maximum."""
     # generate a list of random values
     randomList = []
-    # the size of the list must be defined by the size parameter    
+    # the size of the list must be defined by the size parameter
     # the contents of the list cannot have a number bigger than the number stored in maximum
-    for i in range(0, size):
-        n = random.randint(0, maximum)
-        randomList.append(n)
+    for num in range(0, size):
+        num = random.randint(0, maximum)
+        randomList.append(num)
     # if the make_tuple parameter is True, then return a tuple instead of a list
     if make_tuple is True:
         return tuple(randomList)
     else:
         return randomList
+
 
 def compute_intersection_list_double(
     input_one: List[Any], input_two: List[Any]
@@ -63,12 +64,13 @@ def compute_intersection_list_double(
     """Compute the intersection of two provided lists."""
     # implement this function following the compute_intersection_tuple_double
     # this function must use a double for loop
-    result = [Any, ...]
+    result: List[Any] = []
     for x in input_one:
         for y in input_two:
             if x == y:
                 result.append(y)
     return result
+
 
 def compute_intersection_list_single(
     input_one: List[Any], input_two: List[Any]
@@ -76,10 +78,10 @@ def compute_intersection_list_single(
     """Compute the intersection of two provided lists."""
     # implement this following the compute_intersection_tuple_single
     # this function must use a single for loop and an if statement
-    result = [Any, ...]
-    for x in input_one:
-        if x in input_two:
-            result.append(x)
+    result: List[Any] = []
+    for element in input_one:
+        if element in input_two:
+            result.append(element)
     return result
 
 
